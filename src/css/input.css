@@ -2,11 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary: #121212;
+  --secondary: #464646;
+}
+
 body {
   font-family: "SF UI Display", sans-serif;
 }
 
-.navbar-toggle {
-  display: block;
-  transition: all ease-in 2s;
+.height-auto {
+  height: auto;
+  height: calc-size(auto);
+}
+
+a:hover {
+  color: var(--primary);
 }

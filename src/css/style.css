@@ -663,8 +663,20 @@ video {
   inset-inline-end: 0.25rem;
 }
 
+.left-0 {
+  left: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
 .start-1 {
   inset-inline-start: 0.25rem;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .isolate {
@@ -673,6 +685,10 @@ video {
 
 .isolation-auto {
   isolation: auto;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .float-start {
@@ -733,12 +749,24 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .mt-0 {
   margin-top: 0px;
 }
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .mt-4 {
@@ -864,8 +892,16 @@ video {
   height: 1.25rem;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .h-8 {
   height: 2rem;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .w-1 {
@@ -898,6 +934,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.max-w-5xl {
+  max-width: 64rem;
 }
 
 .max-w-screen-xl {
@@ -1428,6 +1468,10 @@ video {
 
 .gap-10 {
   gap: 2.5rem;
+}
+
+.gap-2\.5 {
+  gap: 0.625rem;
 }
 
 .gap-4 {
@@ -2074,11 +2118,6 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.py-1\.5 {
-  padding-top: 0.375rem;
-  padding-bottom: 0.375rem;
-}
-
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -2292,6 +2331,10 @@ video {
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
 }
 
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
 .tracking-wider {
   letter-spacing: 0.05em;
 }
@@ -2354,6 +2397,10 @@ video {
 .subpixel-antialiased {
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 .bg-blend-normal {
@@ -2620,6 +2667,10 @@ video {
   transition-duration: 150ms;
 }
 
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -2682,13 +2733,22 @@ video {
   forced-color-adjust: none;
 }
 
+:root {
+  --primary: #121212;
+  --secondary: #464646;
+}
+
 body {
   font-family: "SF UI Display", sans-serif;
 }
 
-.navbar-toggle {
-  display: block;
-  transition: all ease-in 2s;
+.height-auto {
+  height: auto;
+  height: calc-size(auto);
+}
+
+a:hover {
+  color: var(--primary);
 }
 
 @media (min-width: 640px) {
@@ -2741,17 +2801,6 @@ body {
   text-align: center;
 }
 
-.focus\:outline-none:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.focus\:ring-2:focus {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
-
 .focus\:hover\:text-center:hover:focus {
   text-align: center;
 }
@@ -2767,58 +2816,49 @@ body {
 }
 
 @media (min-width: 768px) {
-  .md\:mt-0 {
-    margin-top: 0px;
-  }
-
   .md\:block {
     display: block;
+  }
+
+  .md\:flex {
+    display: flex;
   }
 
   .md\:hidden {
     display: none;
   }
 
-  .md\:w-auto {
-    width: auto;
+  .md\:flex-1 {
+    flex: 1 1 0%;
   }
 
-  .md\:flex-row {
-    flex-direction: row;
+  .md\:flex-row-reverse {
+    flex-direction: row-reverse;
   }
 
-  .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(2rem * var(--tw-space-x-reverse));
-    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  .md\:items-start {
+    align-items: flex-start;
   }
 
-  .md\:border-0 {
-    border-width: 0px;
+  .md\:justify-between {
+    justify-content: space-between;
   }
 
-  .md\:bg-transparent {
-    background-color: transparent;
+  .md\:gap-5 {
+    gap: 1.25rem;
   }
 
-  .md\:p-0 {
-    padding: 0px;
+  .md\:text-start {
+    text-align: start;
   }
 
-  .md\:hover\:bg-transparent:hover {
-    background-color: transparent;
+  .md\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
   }
-}
 
-.rtl\:space-x-reverse:where([dir="rtl"], [dir="rtl"] *) > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 1;
-}
-
-@media (min-width: 768px) {
-  @media (prefers-color-scheme: dark) {
-    .md\:dark\:hover\:bg-transparent:hover {
-      background-color: transparent;
-    }
+  .md\:opacity-100 {
+    opacity: 1;
   }
 }
 
