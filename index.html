@@ -119,14 +119,16 @@
 
     <!-- Body Wrapper -->
     <!-- This what content pushes to the middle for easy user interface. -->
-    <div id="body-wrapper" class="mx-auto lg:max-w-4xl xl:max-w-5xl">
+    <div id="body-wrapper" class="mx-auto md:max-w-xl lg:max-w-4xl">
       <!-- Hero Sextion -->
       <section id="hero">
         <div
-          class="container mx-auto mb-16 mt-20 flex-row px-7 lg:flex lg:flex-row-reverse"
+          class="container mx-auto mb-16 mt-28 flex-row px-7 lg:flex lg:flex-row-reverse lg:px-0"
         >
           <!-- Image Column -->
-          <div class="flex flex-col items-center justify-center lg:flex-1">
+          <div
+            class="flex flex-col items-center justify-center lg:flex-1 lg:items-end"
+          >
             <!-- Mobile Image -->
             <img
               class="mb-6 w-auto md:hidden"
@@ -136,7 +138,7 @@
             />
             <!-- Desktop Image -->
             <img
-              class="hidden h-auto sm:w-1/2 md:block md:w-1/2 lg:w-10/12"
+              class="hidden h-auto sm:w-1/2 md:mb-8 md:block md:w-3/4 lg:w-10/12"
               src="src/img/hansana-desktop.png"
               alt=""
               srcset=""
@@ -147,7 +149,7 @@
             class="flex flex-col items-center justify-center lg:flex-1 lg:items-start"
           >
             <h1
-              class="mb-6 text-center text-5xl font-bold text-primary md:text-start md:text-6xl lg:text-7xl"
+              class="mb-6 text-center text-5xl font-bold text-primary md:text-6xl lg:text-start lg:text-7xl"
             >
               Front End Developer
             </h1>
@@ -200,36 +202,39 @@
           </div>
         </div>
       </section>
-
       <!-- Hero Section -->
 
       <!-- About Section -->
       <section id="about">
-        <div class="container mx-auto mb-16 flex-row px-7 lg:flex">
-          <div class="flex flex-col items-center justify-center lg:flex-1">
+        <div class="container mx-auto mb-16 flex-row px-7 lg:flex lg:px-0">
+          <div
+            class="flex flex-col items-center justify-center lg:flex-1 lg:items-start"
+          >
             <img
-              class="mb-8 w-full rounded-xl"
+              class="mb-8 w-full rounded-xl object-cover lg:mb-0 lg:h-[300px] lg:w-[400px]"
               src="src/img/about-img-2.jpg"
               alt=""
               srcset=""
             />
           </div>
 
-          <div class="flex flex-col justify-center text-center lg:flex-1">
-            <h2 class="mb-5 inline-block text-2xl">
-              Front-End Developer<br />
+          <div
+            class="flex flex-col justify-center text-center lg:flex-1 lg:text-start"
+          >
+            <h2 class="mb-5 inline-block text-2xl font-light sm:text-4xl">
+              <span class="font-bold">Front-End Developer</span><br />
               from Kandy, Sri Lanka. 🇱🇰
             </h2>
-            <p class="mb-2 font-light text-secondary">
-              Hello! 👋 I'm Hansana Prabath.
+            <p class="mb-2 font-light text-secondary sm:mb-4 sm:text-2xl">
+              Hello! 👋 I'm <b>Hansana Prabath</b>.
             </p>
-            <p class="font-light text-secondary">
+            <p class="font-light text-secondary sm:text-lg">
               A web developer with a strong foundation in the Full-Stack
               Development process, specializing in front-end technologies like
-              <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, and <b>WordPress</b>.
+              HTML, CSS, JavaScript, and WordPress.
             </p>
 
-            <div id="skill-icons" class="mt-8 lg:hidden">
+            <div id="skill-icons" class="mt-8 md:hidden">
               <img
                 class="mx-auto mb-2 h-10"
                 src="https://skillicons.dev/icons?i=html,css,js,bootstrap,tailwind,sass&perline=6"
