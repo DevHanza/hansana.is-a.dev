@@ -56,16 +56,20 @@
         }
       }
 
+      html {
+        scroll-behavior: smooth;
+      }
+
       .height-auto {
         height: auto;
         height: calc-size(auto);
       }
 
-      .svg-icon {
+      #hero .svg-icon {
         transition: filter 0.3s ease;
       }
 
-      .svg-icon:hover {
+      #hero .svg-icon:hover {
         filter: brightness(90%) contrast(150%) saturate(80%) hue-rotate(180deg);
       }
     </style>
@@ -90,27 +94,27 @@
           <li
             class="hidden py-2 text-base tracking-wide text-secondary md:block"
           >
-            <a href="#">Home</a>
+            <a href="#hero">Home</a>
           </li>
           <li
             class="hidden py-2 text-base tracking-wide text-secondary md:block"
           >
-            <a href="#">About</a>
+            <a href="#about">About</a>
           </li>
           <li
             class="hidden py-2 text-base tracking-wide text-secondary md:block"
           >
-            <a href="#">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li
             class="hidden py-2 text-base tracking-wide text-secondary md:block"
           >
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
           <li
             class="hidden py-2 text-base tracking-wide text-secondary md:block"
           >
-            <a href="#">Blog</a>
+            <a href="#blog">Blog</a>
           </li>
         </ul>
       </nav>
@@ -122,9 +126,7 @@
     <div id="body-wrapper" class="mx-auto md:max-w-2xl lg:max-w-4xl">
       <!-- Hero Sextion -->
       <section id="hero" class="mb-24 mt-28">
-        <div
-          class="mx-auto flex-row px-7 lg:flex lg:flex-row-reverse lg:px-0"
-        >
+        <div class="flex-row px-7 lg:flex lg:flex-row-reverse lg:px-0">
           <!-- Image Column -->
           <div
             class="flex flex-col items-center justify-center lg:flex-1 lg:items-end"
@@ -149,7 +151,7 @@
             class="flex flex-col items-center justify-center lg:flex-1 lg:items-start"
           >
             <h1
-              class="mb-6 text-center text-5xl font-bold text-primary lg:text-start md:text-7xl"
+              class="mb-6 text-center text-5xl font-bold text-primary md:text-7xl lg:text-start"
             >
               Front End Developer
             </h1>
@@ -206,7 +208,7 @@
 
       <!-- About Section -->
       <section id="about" class="mb-24">
-        <div class="mx-auto flex-row px-7 md:px-0 lg:flex lg:px-0">
+        <div class="flex-row px-7 md:px-0 lg:flex">
           <!-- ### -->
           <div
             class="flex flex-col items-center justify-center lg:flex-1 lg:items-start"
@@ -222,8 +224,10 @@
           <div
             class="flex flex-col justify-center text-center lg:flex-1 lg:text-start"
           >
-            <h2 class="mb-5 inline-block text-4xl sm:text-5xl font-light">
-              <span class="font-bold">19 years old</span> dev<br/>
+            <h2
+              class="mb-5 inline-block text-4xl font-light text-primary sm:text-5xl"
+            >
+              <span class="font-bold">19 years old</span> dev<br />
               from <span class="font-bold">Sri Lanka</span>. 🇱🇰
             </h2>
             <p class="mb-2 font-light text-secondary sm:mb-4 sm:text-2xl">
@@ -254,8 +258,8 @@
         </div>
 
         <!-- Skill Icons Desktop -->
-        <div class="flex-row">
-          <div id="skillicons-desktop" class="hidden sm:flex sm:mt-20">
+        <div class="flex flex-row">
+          <div id="skillicons-desktop" class="mx-auto hidden sm:mt-20 sm:flex">
             <img
               class="mx-auto mb-2 h-14"
               src="https://skillicons.dev/icons?i=html,css,js,tailwind,bootstrap,sass,wordpress,nodejs,angular&perline=10"
@@ -266,6 +270,47 @@
         </div>
       </section>
       <!-- About Section -->
+
+      <section id="projects" class="mb-24 text-primary">
+        <div class="px-7 md:px-0">
+          <h2 class="text-2xl font-semibold">PROJECTS</h2>
+          <p class="mb-16 text-lg font-light text-secondary">
+            Lorem ipsum dolor sit amet, consectetur.
+          </p>
+
+          <!-- Project Card-->
+
+          <div class="project-card">
+            <div class="flex-row lg:flex">
+              <div
+                class="flex flex-col items-center justify-center lg:flex-1 lg:items-start"
+              >
+                <img
+                  class="mb-6 w-full rounded-xl object-cover lg:mb-0 lg:h-[300px] lg:w-[400px]"
+                  src="src/img/project-card-img.png"
+                  alt=""
+                />
+              </div>
+
+              <div
+                class="flex flex-col items-center justify-center text-center lg:flex-1 lg:items-start lg:text-start"
+              >
+                <h3 class="mb-4 text-xl text-primary sm:text-3xl">
+                  <span class="font-semibold">De Mansion Hotels:</span>
+                  <span class="font-light"
+                    >Professional Responsive Website</span
+                  >
+                </h3>
+                <p class="font-light text-secondary sm:text-lg">
+                  Praesent pellentesque viverra nunc euveenatis. Vestibulum
+                  maximus magna a odio dignissim, id dignissi m nisl aliquam.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </div>
     <!-- Body Wrapper -->
   </body>
