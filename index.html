@@ -121,9 +121,9 @@
     <!-- This what content pushes to the middle for easy user interface. -->
     <div id="body-wrapper" class="mx-auto md:max-w-xl lg:max-w-4xl">
       <!-- Hero Sextion -->
-      <section id="hero">
+      <section id="hero" class="mb-16 mt-28">
         <div
-          class="container mx-auto mb-16 mt-28 flex-row px-7 lg:flex lg:flex-row-reverse lg:px-0"
+          class="container mx-auto flex-row px-7 lg:flex lg:flex-row-reverse lg:px-0"
         >
           <!-- Image Column -->
           <div
@@ -138,7 +138,7 @@
             />
             <!-- Desktop Image -->
             <img
-              class="hidden h-auto sm:w-1/2 md:mb-8 md:block md:w-3/4 lg:w-10/12"
+              class="hidden h-auto sm:w-1/2 md:mb-8 md:block md:w-3/4 lg:mb-0 lg:w-10/12"
               src="src/img/hansana-desktop.png"
               alt=""
               srcset=""
@@ -207,6 +207,7 @@
       <!-- About Section -->
       <section id="about">
         <div class="container mx-auto mb-16 flex-row px-7 lg:flex lg:px-0">
+          <!-- ### -->
           <div
             class="flex flex-col items-center justify-center lg:flex-1 lg:items-start"
           >
@@ -234,7 +235,8 @@
               HTML, CSS, JavaScript, and WordPress.
             </p>
 
-            <div id="skill-icons" class="mt-8 md:hidden">
+            <!-- Skill Icons Mobile -->
+            <div id="skillicons-mobile" class="mt-8 md:hidden">
               <img
                 class="mx-auto mb-2 h-10"
                 src="https://skillicons.dev/icons?i=html,css,js,bootstrap,tailwind,sass&perline=6"
@@ -248,6 +250,18 @@
                 srcset=""
               />
             </div>
+          </div>
+        </div>
+
+        <!-- Skill Icons Desktop -->
+        <div class="flex-row">
+          <div id="skillicons-desktop" class="hidden md:flex">
+            <img
+              class="mx-auto mb-2 h-14"
+              src="https://skillicons.dev/icons?i=html,css,js,tailwind,bootstrap,sass,wordpress,nodejs,angular&perline=10"
+              alt=""
+              srcset=""
+            />
           </div>
         </div>
       </section>
