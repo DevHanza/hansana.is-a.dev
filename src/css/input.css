@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .content-auto {
+    content-visibility: auto;
+  }
+}
+
 :root {
   --primary: #121212;
   --secondary: #464646;
@@ -18,4 +24,28 @@ body {
 
 a:hover {
   color: var(--primary);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.height-auto {
+  height: auto;
+  height: calc-size(auto);
+}
+
+#hero .svg-icon {
+  transition: filter 0.3s ease;
+}
+
+#hero .svg-icon:hover {
+  filter: brightness(90%) contrast(150%) saturate(80%) hue-rotate(180deg);
+}
+
+footer .svg-icon {
+  filter: invert(100%) brightness(150%) contrast(300%);
+}
+footer .svg-icon:hover {
+  filter: invert(100%) brightness(80%) contrast(300%);
 }

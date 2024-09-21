@@ -30,7 +30,7 @@
     /> -->
 
     <!-- Tailwind CSS (Only for production, REMOVE WHEN DEPLOY) -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
       tailwind.config = {
@@ -39,47 +39,19 @@
             colors: {
               transparent: "transparent",
               current: "currentColor",
-              'primary': "#121212",
-              'secondary': "#464646",
+              "primary": "#121212",
+              "secondary": "#464646",
             },
           },
         },
       };
-    </script>
+    </script> -->
+    <!-- 
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script> -->
 
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
-
-    <style type="text/tailwindcss">
-      @layer utilities {
-        .content-auto {
-          content-visibility: auto;
-        }
+    <!-- <style type="text/tailwindcss">
       }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
-      .height-auto {
-        height: auto;
-        height: calc-size(auto);
-      }
-
-      #hero .svg-icon {
-        transition: filter 0.3s ease;
-      }
-
-      #hero .svg-icon:hover {
-        filter: brightness(90%) contrast(150%) saturate(80%) hue-rotate(180deg);
-      }
-
-      footer .svg-icon {
-        filter: invert(100%) brightness(150%) contrast(300%);
-      }
-      footer .svg-icon:hover {
-        filter: invert(100%) brightness(80%) contrast(300%);
-      }
-    </style>
+    </style> -->
   </head>
 
   <body>
@@ -121,7 +93,7 @@
           <li
             class="hidden py-2 text-base tracking-wide text-secondary md:block"
           >
-            <a href="#blog">Blog</a>
+            <a href="https://devhanza.medium.com/">Blog</a>
           </li>
         </ul>
       </nav>
@@ -177,7 +149,7 @@
             </p>
             <div class="flex gap-2.5">
               <a
-                href="https://lk.linkedin.com/in/devhanza"
+                href="https://linkedin.com/in/devhanza"
                 aria-label="Connect with me on LinkedIn"
               >
                 <img
@@ -225,7 +197,7 @@
           >
             <img
               class="mb-10 w-full rounded-xl object-cover md:mb-0 md:h-[300px] lg:w-[400px]"
-              src="src/img/about-img-2.jpg"
+              src="src/img/about-img.png"
               alt=""
               srcset=""
             />
@@ -409,89 +381,90 @@
         </div>
       </section>
       <!-- Projects Section -->
-      
     </div>
     <!-- Body Wrapper -->
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-100" >
+    <section id="contact" class="bg-gray-100 py-20">
       <div class="container mx-auto px-7 md:max-w-3xl lg:max-w-4xl lg:px-0">
-        <h2 class="text-center text-4xl font-bold text-primary mb-3">
+        <h2 class="mb-3 text-center text-4xl font-bold text-primary">
           Let’s Talk! 😇
         </h2>
         <p class="text-center text-5xl font-medium text-secondary">
           <a href="mailto:devhanza@gmail.com">devhanza@gmail.com</a>
-          
-          <div class="contact-buttons flex justify-center text-base gap-3 mt-7">
-            
-            <button class="text-base lg:text-lg flex justify-center gap-3 items-center px-5 py-2 border-black rounded-md border-4">
-              
-              Copy Email
-              <i
-              class="bx bx-copy text-2xl"
-              onclick="toggleMenu()"
-            ></i>
-            </button>
+        </p>
 
-            <button class="text-white text-base lg:text-lg flex justify-center gap-3 items-center px-5 py-2 border-black rounded-md bg-primary border-4">
-              
-              Let's Talk
-              <i
+        <div class="contact-buttons mt-7 flex justify-center gap-3 text-base">
+          <button
+            class="border-black hover:text-white flex items-center justify-center gap-3 rounded-md border-4 px-5 py-2 text-base hover:bg-primary lg:text-lg"
+          >
+            Copy Email
+            <i class="bx bx-copy text-2xl" onclick="toggleMenu()"></i>
+          </button>
+
+          <button
+            class="text-white border-black hover:bg-gray-800 hover:border-gray-800 flex items-center justify-center gap-3 rounded-md border-4 bg-primary px-5 py-2 text-base lg:text-lg"
+          >
+            Let's Talk
+            <i
               class="bx bx-message-square-dots text-2xl"
               onclick="toggleMenu()"
             ></i>
-            </button>
-
- 
-          </div>
-        </p>
+          </button>
+        </div>
       </div>
     </section>
     <!-- Contact Section -->
 
     <!-- Footer -->
-     <footer class="bg-primary py-5">
-      <div class="flex mx-auto justify-between md:max-w-3xl lg:max-w-4xl lg:px-0">
-      <p class="text-base text-white">All rights reserved &copy; 2021 - <span id="currentYear">2024</span></p>
-
-      <div class="flex gap-2.5">
-        <a
-          href="https://lk.linkedin.com/in/devhanza"
-          aria-label="Connect with me on LinkedIn"
+    <footer class="bg-primary py-6">
+      <div
+        class="mx-auto flex flex-col items-center justify-between md:max-w-3xl lg:max-w-4xl lg:flex-row lg:px-0"
+      >
+        <p
+          class="text-white text-center text-base font-light lg:text-start lg:font-normal"
         >
-          <img
-            class="svg-icon h-6 md:h-5"
-            src="src/svg/linkedin.svg"
-            alt=""
-            srcset=""
-          />
-        </a>
+          All rights reserved &copy; 2021 - <span id="currentYear">2024</span>
+        </p>
 
-        <a
-          href="https://github.com/DevHanza/"
-          aria-label="Follow me on Github"
-        >
-          <img
-            class="svg-icon h-6 md:h-5"
-            src="src/svg/github.svg"
-            alt=""
-            srcset=""
-          />
-        </a>
+        <div class="mx-auto mt-3 flex gap-3 lg:mx-0 lg:mt-0">
+          <a
+            href="https://lk.linkedin.com/in/devhanza"
+            aria-label="Connect with me on LinkedIn"
+          >
+            <img
+              class="svg-icon h-6 md:h-5"
+              src="src/svg/linkedin.svg"
+              alt=""
+              srcset=""
+            />
+          </a>
 
-        <a
-          href="https://www.fiverr.com/hanzas"
-          aria-label="Hire me on Fiverr"
-        >
-          <img
-            class="svg-icon h-6 md:h-5"
-            src="src/svg/fiverr.svg"
-            alt=""
-            srcset=""
-        /></a>
+          <a
+            href="https://github.com/DevHanza/"
+            aria-label="Follow me on Github"
+          >
+            <img
+              class="svg-icon h-6 md:h-5"
+              src="src/svg/github.svg"
+              alt=""
+              srcset=""
+            />
+          </a>
+
+          <a
+            href="https://www.fiverr.com/hanzas"
+            aria-label="Hire me on Fiverr"
+          >
+            <img
+              class="svg-icon h-6 md:h-5"
+              src="src/svg/fiverr.svg"
+              alt=""
+              srcset=""
+          /></a>
+        </div>
       </div>
-    </div>
-     </footer>
+    </footer>
     <!-- Footer -->
   </body>
 </html>
