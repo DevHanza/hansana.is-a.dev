@@ -123,10 +123,13 @@
 
     <!-- Body Wrapper -->
     <!-- This what content pushes to the middle for easy user interface. -->
-    <div id="body-wrapper" class="mx-auto md:max-w-2xl lg:max-w-4xl">
+    <div
+      id="body-wrapper"
+      class="mx-auto px-7 md:max-w-3xl lg:max-w-4xl lg:px-0"
+    >
       <!-- Hero Sextion -->
       <section id="hero" class="mb-24 mt-28">
-        <div class="flex-row px-7 lg:flex lg:flex-row-reverse lg:px-0">
+        <div class="flex-row lg:flex lg:flex-row-reverse">
           <!-- Image Column -->
           <div
             class="flex flex-col items-center justify-center lg:flex-1 lg:items-end"
@@ -208,13 +211,13 @@
 
       <!-- About Section -->
       <section id="about" class="mb-24">
-        <div class="flex-row px-7 md:px-0 lg:flex">
+        <div class="flex-row sm:gap-10 md:flex lg:gap-0">
           <!-- ### -->
           <div
-            class="flex flex-col items-center justify-center lg:flex-1 lg:items-start"
+            class="flex flex-col items-center justify-center md:flex-1 md:items-start"
           >
             <img
-              class="mb-10 w-full rounded-xl object-cover lg:mb-0 lg:h-[300px] lg:w-[400px]"
+              class="mb-10 w-full rounded-xl object-cover md:mb-0 md:h-[300px] lg:w-[400px]"
               src="src/img/about-img-2.jpg"
               alt=""
               srcset=""
@@ -222,18 +225,18 @@
           </div>
 
           <div
-            class="flex flex-col justify-center text-center lg:flex-1 lg:text-start"
+            class="flex flex-col justify-center text-center md:flex-1 md:text-start"
           >
             <h2
-              class="mb-5 inline-block text-4xl font-light text-primary sm:text-5xl"
+              class="mb-5 inline-block text-4xl font-light text-primary lg:text-5xl"
             >
               <span class="font-bold">19 years old</span> dev<br />
               from <span class="font-bold">Sri Lanka</span>. 🇱🇰
             </h2>
-            <p class="mb-2 font-light text-secondary sm:mb-4 sm:text-2xl">
+            <p class="mb-2 font-light text-secondary sm:mb-4 lg:text-2xl">
               Hello! 👋 I'm <b>Hansana Prabath</b>.
             </p>
-            <p class="font-light text-secondary sm:text-lg">
+            <p class="font-light text-secondary lg:text-lg">
               A web developer with a strong foundation in the Full-Stack
               Development process, specializing in front-end technologies like
               HTML, CSS, JavaScript, and WordPress.
@@ -271,46 +274,134 @@
       </section>
       <!-- About Section -->
 
+      <!-- Projects Section -->
       <section id="projects" class="mb-24 text-primary">
-        <div class="px-7 md:px-0">
+        <div class="">
+          <!-- Don't Remove -->
           <h2 class="text-2xl font-semibold">PROJECTS</h2>
           <p class="mb-16 text-lg font-light text-secondary">
             Lorem ipsum dolor sit amet, consectetur.
           </p>
 
-          <!-- Project Card-->
-
-          <div class="project-card">
-            <div class="flex-row lg:flex">
+          <div class="CARDS-WRAPPER-MAIN flex flex-col gap-5 lg:gap-16">
+            <!-- Cards Wrapper 1 - per 2 cards -->
+            <div class="flex flex-col gap-5 sm:flex-row lg:flex-col lg:gap-16">
+              <!-- Project Card 01 -->
               <div
-                class="flex flex-col items-center justify-center lg:flex-1 lg:items-start"
+                class="project-card mb-10 flex flex-col items-center lg:mb-0 lg:flex-row"
               >
-                <img
-                  class="mb-6 w-full rounded-xl object-cover lg:mb-0 lg:h-[300px] lg:w-[400px]"
-                  src="src/img/project-card-img.png"
-                  alt=""
-                />
-              </div>
-
-              <div
-                class="flex flex-col items-center justify-center text-center lg:flex-1 lg:items-start lg:text-start"
-              >
-                <h3 class="mb-4 text-xl text-primary sm:text-3xl">
-                  <span class="font-semibold">De Mansion Hotels:</span>
-                  <span class="font-light"
-                    >Professional Responsive Website</span
+                <div class="project-card-img flex-1 w-full">
+                  <!-- Don't Remove -->
+                  <img
+                    class="mb-6 w-full rounded-xl object-cover lg:mb-0 lg:h-[250px] lg:w-[400px]"
+                    src="src/img/project-card-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="project-card-text m-2 flex-1 lg:m-0">
+                  <!-- Don't Remove -->
+                  <h3
+                    class="mb-2 text-2xl text-primary sm:text-2xl lg:mb-4 lg:text-3xl"
                   >
-                </h3>
-                <p class="font-light text-secondary sm:text-lg">
-                  Praesent pellentesque viverra nunc euveenatis. Vestibulum
-                  maximus magna a odio dignissim, id dignissi m nisl aliquam.
-                </p>
+                    <span class="font-semibold">De Mansion Hotels:</span><br />
+                    <span class="font-light"
+                      >Professional Responsive Website</span
+                    >
+                  </h3>
+                  <p class="text-lg font-light text-secondary">
+                    Praesent pellentesque viverra nunc euveenatis. Vestibulum
+                    maximus magna a odio dignissim, id dignissi m nisl aliquam.
+                  </p>
+                </div>
+              </div>
+              <!-- Project Card 02 -->
+              <div
+                class="project-card mb-10 flex flex-col items-center lg:mb-0 lg:flex-row"
+              >
+                <div class="project-card-img flex-1 w-full">
+                  <!-- Don't Remove -->
+                  <img
+                    class="mb-6 w-full rounded-xl object-cover lg:mb-0 lg:h-[250px] lg:w-[400px]"
+                    src="src/img/project-card-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="project-card-text m-2 flex-1 lg:m-0">
+                  <!-- Don't Remove -->
+                  <h3
+                    class="mb-2 text-2xl text-primary sm:text-2xl lg:mb-4 lg:text-3xl"
+                  >
+                    <span class="font-semibold">Pipuna Traders:</span><br />
+                    <span class="font-light">Custom WordPress Website</span>
+                  </h3>
+                  <p class="text-lg font-light text-secondary">
+                    Praesent pellentesque viverra nunc euveenatis. Vestibulum
+                    maximus magna a odio dignissim, id dignissi m nisl aliquam.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cards Wrapper 2 - per 2 cards -->
+            <div class="flex flex-col gap-5 sm:flex-row lg:flex-col lg:gap-16">
+              <!-- Project Card 03 -->
+              <div
+                class="project-card mb-10 flex flex-col items-center lg:mb-0 lg:flex-row"
+              >
+                <div class="project-card-img flex-1 w-full">
+                  <!-- Don't Remove -->
+                  <img
+                    class="mb-6 w-full rounded-xl object-cover lg:mb-0 lg:h-[250px] lg:w-[400px]"
+                    src="src/img/project-card-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="project-card-text m-2 flex-1 lg:m-0">
+                  <!-- Don't Remove -->
+                  <h3
+                    class="mb-2 text-2xl text-primary sm:text-2xl lg:mb-4 lg:text-3xl"
+                  >
+                    <span class="font-semibold">Lakshman Camera Rent:</span
+                    ><br />
+                    <span class="font-light">Website Development</span>
+                  </h3>
+                  <p class="text-lg font-light text-secondary">
+                    Praesent pellentesque viverra nunc euveenatis. Vestibulum
+                    maximus magna a odio dignissim, id dignissi m nisl aliquam.
+                  </p>
+                </div>
+              </div>
+              <!-- Project Card 04 -->
+              <div
+                class="project-card mb-10 flex flex-col items-center lg:mb-0 lg:flex-row"
+              >
+                <div class="project-card-img flex-1 w-full">
+                  <!-- Don't Remove -->
+                  <img
+                    class="mb-6 w-full rounded-xl object-cover lg:mb-0 lg:h-[250px] lg:w-[400px]"
+                    src="src/img/project-card-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="project-card-text m-2 flex-1 lg:m-0">
+                  <!-- Don't Remove -->
+                  <h3
+                    class="mb-2 text-2xl text-primary sm:text-2xl lg:mb-4 lg:text-3xl"
+                  >
+                    <span class="font-semibold">Vishnu Villas:</span><br />
+                    <span class="font-light">Minimalistic Website Design</span>
+                  </h3>
+                  <p class="text-lg font-light text-secondary">
+                    Praesent pellentesque viverra nunc euveenatis. Vestibulum
+                    maximus magna a odio dignissim, id dignissi m nisl aliquam.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-
         </div>
       </section>
+      <!-- Projects Section -->
     </div>
     <!-- Body Wrapper -->
   </body>
