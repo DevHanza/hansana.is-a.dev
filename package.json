@@ -103,7 +103,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tailwind": "npx tailwindcss -i src/css/input.css -o src/css/style.css --watch",
-    "compiletw": "npx tailwindcss -i src/css/input.css -o src/css/style.css"
+    "compile": "npx tailwindcss -i src/css/input.css -o src/css/style.css"
   },
   "keywords": [],
   "author": "",

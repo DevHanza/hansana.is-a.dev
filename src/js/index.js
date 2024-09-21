@@ -11,3 +11,9 @@ function toggleMenu() {
   var navWrapper = document.getElementById("nav-wrapper");
   navWrapper.classList.toggle("drop-shadow");
 }
+
+// Update the Current Year
+document.addEventListener("DOMContentLoaded", function () {
+  const currentYearSpan = document.getElementById("currentYear");
+  currentYearSpan.textContent = new Date().getFullYear();
+});

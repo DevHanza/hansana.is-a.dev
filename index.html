@@ -39,8 +39,8 @@
             colors: {
               transparent: "transparent",
               current: "currentColor",
-              primary: "#121212",
-              secondary: "#464646",
+              'primary': "#121212",
+              'secondary': "#464646",
             },
           },
         },
@@ -71,6 +71,13 @@
 
       #hero .svg-icon:hover {
         filter: brightness(90%) contrast(150%) saturate(80%) hue-rotate(180deg);
+      }
+
+      footer .svg-icon {
+        filter: invert(100%) brightness(150%) contrast(300%);
+      }
+      footer .svg-icon:hover {
+        filter: invert(100%) brightness(80%) contrast(300%);
       }
     </style>
   </head>
@@ -290,7 +297,7 @@
               <div
                 class="project-card mb-10 flex flex-col items-center lg:mb-0 lg:flex-row"
               >
-                <div class="project-card-img flex-1 w-full">
+                <div class="project-card-img w-full flex-1">
                   <!-- Don't Remove -->
                   <img
                     class="mb-6 w-full rounded-xl object-cover lg:mb-0 lg:h-[250px] lg:w-[400px]"
@@ -318,7 +325,7 @@
               <div
                 class="project-card mb-10 flex flex-col items-center lg:mb-0 lg:flex-row"
               >
-                <div class="project-card-img flex-1 w-full">
+                <div class="project-card-img w-full flex-1">
                   <!-- Don't Remove -->
                   <img
                     class="mb-6 w-full rounded-xl object-cover lg:mb-0 lg:h-[250px] lg:w-[400px]"
@@ -348,7 +355,7 @@
               <div
                 class="project-card mb-10 flex flex-col items-center lg:mb-0 lg:flex-row"
               >
-                <div class="project-card-img flex-1 w-full">
+                <div class="project-card-img w-full flex-1">
                   <!-- Don't Remove -->
                   <img
                     class="mb-6 w-full rounded-xl object-cover lg:mb-0 lg:h-[250px] lg:w-[400px]"
@@ -375,7 +382,7 @@
               <div
                 class="project-card mb-10 flex flex-col items-center lg:mb-0 lg:flex-row"
               >
-                <div class="project-card-img flex-1 w-full">
+                <div class="project-card-img w-full flex-1">
                   <!-- Don't Remove -->
                   <img
                     class="mb-6 w-full rounded-xl object-cover lg:mb-0 lg:h-[250px] lg:w-[400px]"
@@ -402,7 +409,89 @@
         </div>
       </section>
       <!-- Projects Section -->
+      
     </div>
     <!-- Body Wrapper -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100" >
+      <div class="container mx-auto px-7 md:max-w-3xl lg:max-w-4xl lg:px-0">
+        <h2 class="text-center text-4xl font-bold text-primary mb-3">
+          Let’s Talk! 😇
+        </h2>
+        <p class="text-center text-5xl font-medium text-secondary">
+          <a href="mailto:devhanza@gmail.com">devhanza@gmail.com</a>
+          
+          <div class="contact-buttons flex justify-center text-base gap-3 mt-7">
+            
+            <button class="text-base lg:text-lg flex justify-center gap-3 items-center px-5 py-2 border-black rounded-md border-4">
+              
+              Copy Email
+              <i
+              class="bx bx-copy text-2xl"
+              onclick="toggleMenu()"
+            ></i>
+            </button>
+
+            <button class="text-white text-base lg:text-lg flex justify-center gap-3 items-center px-5 py-2 border-black rounded-md bg-primary border-4">
+              
+              Let's Talk
+              <i
+              class="bx bx-message-square-dots text-2xl"
+              onclick="toggleMenu()"
+            ></i>
+            </button>
+
+ 
+          </div>
+        </p>
+      </div>
+    </section>
+    <!-- Contact Section -->
+
+    <!-- Footer -->
+     <footer class="bg-primary py-5">
+      <div class="flex mx-auto justify-between md:max-w-3xl lg:max-w-4xl lg:px-0">
+      <p class="text-base text-white">All rights reserved &copy; 2021 - <span id="currentYear">2024</span></p>
+
+      <div class="flex gap-2.5">
+        <a
+          href="https://lk.linkedin.com/in/devhanza"
+          aria-label="Connect with me on LinkedIn"
+        >
+          <img
+            class="svg-icon h-6 md:h-5"
+            src="src/svg/linkedin.svg"
+            alt=""
+            srcset=""
+          />
+        </a>
+
+        <a
+          href="https://github.com/DevHanza/"
+          aria-label="Follow me on Github"
+        >
+          <img
+            class="svg-icon h-6 md:h-5"
+            src="src/svg/github.svg"
+            alt=""
+            srcset=""
+          />
+        </a>
+
+        <a
+          href="https://www.fiverr.com/hanzas"
+          aria-label="Hire me on Fiverr"
+        >
+          <img
+            class="svg-icon h-6 md:h-5"
+            src="src/svg/fiverr.svg"
+            alt=""
+            srcset=""
+        /></a>
+      </div>
+    </div>
+     </footer>
+    <!-- Footer -->
   </body>
 </html>
