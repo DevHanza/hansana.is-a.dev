@@ -54,7 +54,9 @@
     <nav class="container mx-auto p-5 md:flex md:justify-between">
       <div class="flex justify-between">
         <p class="self-center text-lg"><a href="#">Hansana</a></p>
-        <i class="bx bx-menu-alt-right text-2xl md:before:hidden" onclick="toggleMenu()"></i>
+        <span class="md:hidden">
+          <i class="bx bx-menu-alt-right text-2xl" onclick="toggleMenu()"></i>
+        </span>
       </div>
 
       <ul class="opacity-0 transition-all duration-500 ease-in-out md:flex md:gap-5 md:opacity-100" id="menu">
