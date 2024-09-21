@@ -13,6 +13,10 @@
   --secondary: #464646;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "SF UI Display", sans-serif;
 }
@@ -24,15 +28,6 @@ body {
 
 a:hover {
   color: var(--primary);
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.height-auto {
-  height: auto;
-  height: calc-size(auto);
 }
 
 #hero .svg-icon {
